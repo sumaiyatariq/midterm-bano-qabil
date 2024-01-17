@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm-bano-qabil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .first {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col2 {
+            flex-basis: 50px;
+            min-width: 300px;
+        }
+
+        .col2 img {
+            max-width: 100%;
+            padding: 50px 0;
+        }
+
+        .col2 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffa500;
+            color: #000;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            background-color: #563131;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            background-color: rgb(255, 200, 124);
+        }
+
+        .header .row {
+            margin-top: 70px;
+        }
+
+        .catogries {
+            margin: 70px 0;
+        }
+
+        .col3 {
+            flex-basis: 30%;
+            min-width: 250px;
+
+        }
+
+        .col3 img {
+            width: 100%;
+        }
+
+        .smallcontain {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .col4 {
+            flex-basis: 25%;
+            min-width: 200px;
+            padding: 10px;
+            margin-bottom: 50px;
+            transition: 0.5s;
+        }
+
+        .col4 img {
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #000;
+        }
+
+        .title::after {
+            content: '';
+            background-color: #ffa500;
+            width: 160px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 43%;
+            transform: translateX(-5);
+        }
+
+        .col4 .fa {
+            color: #ffa500;
+        }
+
+        .col4:hover {
+            transform: translateY(-5px);
+        }
+
+        /* offer */
+        .offer {
+            background-color: rgb(255, 200, 124);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+
+        .offer .col2 {
+            padding: 50px;
+        }
+
+        .fa {
+            color: #ffa500;
+        }
+
+        /* test immonial */
+        .testimmonial {
+            padding-top: 100px;
+        }
+
+        .testimmonial .col3 {
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+            cursor: pointer;
+            transition: transform 0.5s;
+            margin-bottom: 30px
+        }
+
+        .testimmonial .col3 img {
+            width: 50px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+
+        .testimmonial .col3:hover {
+            transform: translateY(10px);
+        }
+
+        .fa.fa-quote-left {
+            font-size: 34px;
+            color: #ffa500;
+        }
+
+        /* footer */
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+
+        .footer p {
+            color: #8a8a8a;
+        }
+
+        .footer h3 {
+            color: #fff;
+        }
+
+        .footer-col-1,
+        .feature-col-2,
+        .feature-col-3 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-col-2 img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-3 {
+            flex-basis: 12%;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .footer-col-1 img {
+            width: 140px;
+        }
+
+        .app-store {
+            margin-top: 20px;
+        }
+
+        .footer hr {
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        .copy-right {
+            text-align: center;
+        }
+
+        .menu-icon {
+            width: 25px;
+            margin-left: 20px;
+            display: none;
+        }
+
+        /*------- all product page -----*/
+        .row-2 {
+            justify-content: space-between;
+            margin: 100px auto 50px;
+        }
+
+        select {
+            border: 3px solid #ff523b;
+            padding: 5px;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        .page-btn {
+            margin: 0px auto 80px;
+
+        }
+
+        .page-btn span {
+            display: inline-block;
+            border: 1px solid black;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+
+        }
+
+        .page-btn span:hover {
+            background: black;
+            color: #b5b5b5;
+        }
+
+
+
+
+        /* media query for menu  */
+        @media screen and (max-width: 800px) {
+            nav ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: #010101;
+                width: 100%;
+            }
+
+            nav ul li {
+                position: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                color: #fff;
+            }
+
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="first">
+            <div class="second">
+                <img src="PERFUME_NX-removebg-preview.png" alt="logo" width="150px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                </ul>
+
+            </nav>
+            <img src="shop_12411190.png" width="30px" height="30px">
+            <img class="menu-icon" src="Hamburger_Button_Computer_Icons_Menu_PNG_-_Free_Download-removebg-preview.png">
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+<h1 style="text-align: center;">About Us</h1>
+<p style= "font-family: 'Times New Roman', Times, serif;" >
+    WELCOME TO PERFUME DIRECT, THE UK'S PREMIER ONLINE FRAGRANCE & BEAUTY STORE.
+
+STOCKING A RANGE OF SPECIALLY SELECTED PERFUMES, AFTERSHAVES & GIFT SETS FROM LUXURY BRANDS SUCH AS HUGO BOSS, GUCCI, ARMANI, PACO RABANNE, CALVIN KLEIN, DKNY, JIMMY CHOO & MANY MORE. 
+
+OUR CUSTOMER FOCUSED APPROACH MEANS THAT OUR BUSINESS IS BUILT AROUND YOU. WE SET OUT TO PROVIDE THE BEST PRODUCTS, AT THE BEST PRICE WITH THE BEST CUSTOMER CARE PACKAGE ON THE MARKET. 
+
+WE HAVE BUILT AN EXTENSIVE GLOBAL NETWORK OF BRANDS & SUPPLIERS WHICH ENABLES US TO SOURCE THE LATEST FRAGRANCES AT A GREAT PRICE, WHICH IS THE REASON WE ARE ABLE TO KEEP OUR PRICES LOW. 
+
+WE ARE EXTREMELY PROUD OF OUR FAST, RELIABLE DELIVERY NETWORK, WHICH MEANS ALL ORDERS WILL BE SHIPPED OUT IN LIGHTNING QUICK TIME FROM OUR STATE OF THE ART WAREHOUSE LOCATED IN MANCHESTER, UK.
+
+WE'RE DELIGHTED TO BRING YOU A WIDE VARIETY OF FLEXIBLE PAYMENT METHODS FROM CLEARPAY, LAYBUY & KLARNA; MEANING YOU CAN EITHER SPLIT YOUR PAYMENT INTO MANAGEABLE CHUNKS OR DELAY YOUR PAYMENT BY 30 DAYS, ALL INTEREST FREE.  
+
+OUR FRIENDLY CUSTOMER SERVICE TEAM WHOM OPERATE MONDAY - FRIDAY (9AM-5PM) WILL HANDLE ANY QUERY, BIG OR SMALL SO PLEASE GET IN TOUCH, WE'D BE HAPPY TO HEAR FROM YOU. 
+
+TO KEEP UP TO DATE WITH ALL OUR NEW ARRIVALS, OFFERS & GIVEAWAYS, WHY NOT FOLLOW US ON INSTAGRAM, FACEBOOK, TIKTOK, PINTEREST, YOUTUBE OR TWITTER?
+</p>
+        <!---footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Andoriod and ios mobile phone.</p>
+                        <img class="app-store" src="Untitled design.png">
+                        <img class="app-store" src="Untitled design (1).png">
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="PERFUME_NX-removebg-preview.png">
+                        <p>Our purpose is to provide best fragrance perfume. Lorem ipsum
+                            dolor sit, amet consectetur adipisicing elit. Voluptas incidunt.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copy-right">Copy right 2024-Perfume Nx</p>
+            </div>
+        </div>
+</body>
+
+</html>
