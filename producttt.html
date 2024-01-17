@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,98 +10,119 @@
     <style>
         .first {
             display: flex;
-           align-items: center;
-           padding: 20px;
+            align-items: center;
+            padding: 20px;
         }
+
         nav {
             flex: 1;
             text-align: right;
         }
+
         nav ul {
-            display:inline-block;
-            list-style-type: none ;
+            display: inline-block;
+            list-style-type: none;
         }
+
         nav ul li {
-           display: inline-block;
-           margin : 20px;
+            display: inline-block;
+            margin: 20px;
         }
+
         a {
-            text-decoration:none ;
+            text-decoration: none;
             color: #000000;
         }
+
         .container {
             max-width: 1300px;
-            margin:auto ;
-            padding-left:25px ;
+            margin: auto;
+            padding-left: 25px;
             padding-right: 25px;
         }
+
         .row {
             display: flex;
             align-items: center;
-            flex-wrap:wrap ;
-            justify-content:space-around ;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
+
         .col2 {
-             flex-basis: 50px;
-            min-width:300px;    
+            flex-basis: 50px;
+            min-width: 300px;
         }
+
         .col2 img {
-            max-width:100% ;
-            padding:50px 0 ;
+            max-width: 100%;
+            padding: 50px 0;
         }
+
         .col2 h1 {
-            font-size:50px ;
+            font-size: 50px;
             line-height: 60px;
-            margin:25px 0 ;
+            margin: 25px 0;
         }
+
         .btn {
             display: inline-block;
             background: #ffa500;
             color: #000;
-            padding:8px 30px;
+            padding: 8px 30px;
             margin: 30px 0;
             border-radius: 30px;
             transition: 0.5s;
         }
+
         .btn:hover {
             background-color: #563131;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
         }
+
         .header {
-            background-color: rgb(255,200,124);
+            background-color: rgb(255, 200, 124);
         }
+
         .header .row {
-             margin-top: 70px;
+            margin-top: 70px;
         }
+
         .catogries {
             margin: 70px 0;
         }
+
         .col3 {
-            flex-basis:30% ;
-            min-width:250px ;
-           
+            flex-basis: 30%;
+            min-width: 250px;
+
         }
+
         .col3 img {
             width: 100%;
         }
+
         .smallcontain {
-            max-width:1080px ;
-            margin:auto ;
-            padding-left:25px ;
-            padding-right:25px ;
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
         }
+
         .col4 {
             flex-basis: 25%;
             min-width: 200px;
             padding: 10px;
             margin-bottom: 50px;
-           transition: 0.5s;
+            transition: 0.5s;
         }
+
         .col4 img {
-             width: 100%;
+            width: 100%;
         }
+
         .title {
             text-align: center;
             margin: 0 auto 80px;
@@ -107,6 +130,7 @@
             line-height: 60px;
             color: #000;
         }
+
         .title::after {
             content: '';
             background-color: #ffa500;
@@ -118,48 +142,59 @@
             left: 43%;
             transform: translateX(-5);
         }
+
         .col4 .fa {
             color: #ffa500;
         }
+
         .col4:hover {
             transform: translateY(-5px);
         }
+
         /* offer */
         .offer {
-            background-color: rgb(255,200,124);
-            margin-top: 80px ;
+            background-color: rgb(255, 200, 124);
+            margin-top: 80px;
             padding: 30px 0;
         }
+
         .offer .col2 {
             padding: 50px;
         }
+
         .fa {
             color: #ffa500;
         }
+
         /* test immonial */
         .testimmonial {
             padding-top: 100px;
         }
+
         .testimmonial .col3 {
             text-align: center;
             padding: 40px 20px;
-            box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
             cursor: pointer;
-            transition:transform 0.5s;
+            transition: transform 0.5s;
             margin-bottom: 30px
         }
+
         .testimmonial .col3 img {
-            width:50px ;
+            width: 50px;
             margin-top: 20px;
             border-radius: 50%;
         }
+
         .testimmonial .col3:hover {
             transform: translateY(10px);
         }
+
         .fa.fa-quote-left {
             font-size: 34px;
             color: #ffa500;
         }
+
         /* footer */
         .footer {
             background: #000;
@@ -167,72 +202,131 @@
             font-size: 14px;
             padding: 60px 0 20px;
         }
+
         .footer p {
             color: #8a8a8a;
         }
+
         .footer h3 {
             color: #fff;
         }
-        .footer-col-1, .feature-col-2, .feature-col-3 {
-             min-width: 250px;
-             margin-bottom: 20px;
+
+        .footer-col-1,
+        .feature-col-2,
+        .feature-col-3 {
+            min-width: 250px;
+            margin-bottom: 20px;
         }
+
         .footer-col-1 {
             flex-basis: 30%;
         }
+
         .footer-col-2 {
             flex: 1;
             text-align: center;
         }
+
         .footer-col-2 img {
-            width:180px;
+            width: 180px;
             margin-bottom: 20px;
         }
+
         .footer-col-3 {
             flex-basis: 12%;
             text-align: center;
         }
+
         ul {
             list-style-type: none;
         }
+
         .footer-col-1 img {
             width: 140px;
         }
+
         .app-store {
             margin-top: 20px;
         }
+
         .footer hr {
             border: none;
             background: #b5b5b5;
             height: 1px;
             margin: 20px 0;
         }
+
         .copy-right {
             text-align: center;
         }
+
         .menu-icon {
             width: 25px;
             margin-left: 20px;
             display: none;
         }
+
+        /*------- all product page -----*/
+        .row-2 {
+            justify-content: space-between;
+            margin: 100px auto 50px;
+        }
+
+        select {
+            border: 3px solid #ff523b;
+            padding: 5px;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        .page-btn {
+            margin: 0px auto 80px;
+
+        }
+
+        .page-btn span {
+            display: inline-block;
+            border: 1px solid black;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+
+        }
+
+        .page-btn span:hover {
+            background: black;
+            color: #b5b5b5;
+        }
+
+
+
+
         /* media query for menu  */
-        @media screen and (max-width: 800px){
-            nav ul{
+        @media screen and (max-width: 800px) {
+            nav ul {
                 position: absolute;
                 top: 70px;
                 left: 0;
                 background: #010101;
-                width:100%;
-             }
+                width: 100%;
+            }
+
             nav ul li {
                 position: block;
                 margin-right: 50px;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
+
             nav ul li a {
                 color: #fff;
             }
+
             .menu-icon {
                 display: block;
                 cursor: pointer;
@@ -241,283 +335,204 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="header">
+
     <div class="container">
         <div class="first">
             <div class="second">
                 <img src="PERFUME_NX-removebg-preview.png" alt="logo" width="150px">
             </div>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Products</a></li>
-            </ul>
-    
-        </nav>
-        <img src="shop_12411190.png" width="30px" height="30px">
-        <img class="menu-icon" src="Hamburger_Button_Computer_Icons_Menu_PNG_-_Free_Download-removebg-preview.png">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                </ul>
+
+            </nav>
+            <img src="shop_12411190.png" width="30px" height="30px">
+            <img class="menu-icon" src="Hamburger_Button_Computer_Icons_Menu_PNG_-_Free_Download-removebg-preview.png">
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+    <div class="smallcontain">
+
+        <div class="row row-2">
+            <h2> All Product</h2>
+            <select>
+                <option>Defult Shorting</option>
+                <option>short by price</option>
+                <option>Short by Sales</option>
+                <option>Short by Rating</option>
+            </select>
+        </div>
+
+
+    </div>
+
     </div>
     <div class="row">
-        <div class="col2">
-            <h1>Fill your life with Fragrance</h1>
-            <p >Embark on a fragrant journey through the world of scents, 
-            where each note tells a story, and every fragrance is a unique 
-            chapter waiting to be explored.</p>
-            <a href="" class="btn">Explore Now &#8594;</a>
-        </div>
-        <div class="col2">
-            <img src="laura-chouette-2H_8WbVPRxM-unsplash.jpg" width="600px" height="650px" >
-
-        </div>
-        
-    </div>
-    </div>
-</div>
-    <!--featured catogries-->
-    <div class="catogries">
-        <div class="smallcontain">
-        <div class="row">
-            <div class="col3">
-                <img src="abdullah-ahmad-nYI7CaDWh-w-unsplash.jpg" width="400px" height="500px">
-            </div>
-            <div class="col3">
-                <img src="austin-wilcox-iikGwBbxQhs-unsplash.jpg" width="400px" height="500px">
-            </div>
-            <div class="col3">
-                <img src="jeroen-den-otter-2b0JeJTEclQ-unsplash.jpg" width="400px" height="500px">
-            </div>
-            
-        </div>
-    </div>
-    </div>
-    <!--featured products-->
-    <div class="smallcontain">
-        <h2 class="title">Featured Produts</h2>
-        <div class="row">
-            <div class="col4">
+        <div class="col4">
             <img src="karly-jones-4i9ef6xU738-unsplash.jpg" width="300px" height="400px">
             <h4>Di Gioia</h4>
             <div class="rating">
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <p>$50.00</p>
-            </div>
-            <div class="col4">
+        </div>
+        <div class="col4">
             <img src="laura-chouette-4sKdeIMiFEI-unsplash.jpg" width="300px" height="400px">
             <h4>Coco Noir</h4>
             <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <p>$50.00</p>
-            </div>
-            <div class="col4">
+        </div>
+        <div class="col4">
             <img src="laura-chouette-gbT2KAq1V5c-unsplash.jpg" width="300px" height="400px">
             <h4>Versace Eros</h4>
             <div class="rating">
-           <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-           <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <p>$50.00</p>
-            </div>
         </div>
-        <h2 class="title">Latest Produts</h2>
-        <div class="row">
-            <div class="col4">
+    </div>
+    <div class="row">
+        <div class="col4">
             <img src="laura-chouette-jmACQEf7T2A-unsplash.jpg" width="300px" height="400px">
             <h4>Coco Pink</h4>
             <div class="rating">
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <p>$50.00</p>
-            </div>
-            <div class="col4">
+        </div>
+        <div class="col4">
             <img src="maxim-lozyanko-qFsxwpoDIB4-unsplash.jpg" width="300px" height="400px">
             <h4>L'imperatrice</h4>
             <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <p>$50.00</p>
-            </div>
-            <div class="col4">
+        </div>
+        <div class="col4">
             <img src="olena-bohovyk-GOVTETevRm8-unsplash.jpg" width="300px" height="400px">
             <h4>Gabrielle</h4>
             <div class="rating">
-           <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-           <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <p>$50.00</p>
-            </div>
-            <div class="row"></div>
-                <div class="col4">
-                <img src="mitra-jml-vPVBZxfyHOQ-unsplash.jpg" width="300px" height="400px">
-                <h4>Dolice & Gabbana</h4>
-                <div class="rating">
-                 <i class="fa fa-star"></i>
-                 <i class="fa fa-star"></i>
-                 <i class="fa fa-star"></i>
-                 <i class="fa fa-star"></i>
-                 <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-                </div>
-                <div class="col4">
-                <img src="dario-gomes-MoPGCgHPS6I-unsplash.jpg" width="300px" height="400px">
-                <h4>Candy</h4>
-                <div class="rating">
+        </div>
+        <div class="row"></div>
+        <div class="col4">
+            <img src="mitra-jml-vPVBZxfyHOQ-unsplash.jpg" width="300px" height="400px">
+            <h4>Dolice & Gabbana</h4>
+            <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-                </div>
-                <div class="col4">
-                <img src="delfina-iacub-nrkgRRskOBo-unsplash.jpg" width="300px" height="400px">
-                <h4>Chance</h4>
-                <div class="rating">
-               <i class="fa fa-star"></i>
-               <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-               <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-                </div>
             </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="dario-gomes-MoPGCgHPS6I-unsplash.jpg" width="300px" height="400px">
+            <h4>Candy</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="delfina-iacub-nrkgRRskOBo-unsplash.jpg" width="300px" height="400px">
+            <h4>Chance</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
     </div>
-    <!--Offer-->
-    <div class="offer">
-        <div class="smallcontain">
-            <div class="row">
-                <div class="col2">
-                      <img src="81678098_Luxury_perfume_bottle_-10-removebg-preview.png" 
-                      width="700px" height="500px" > 
-                </div>
-                <div class="col2">
-                    <p>Exclusively available on PERFUME NX</p>
-                    <h1>Daisy Perfume</h1>
-                    <small>In the heart of Daisy perfume, a delicate blend of jasmine and
-                    violet petals adds a touch of elegance, while a base of white woods 
-                    and musk leaves a lingering trail of sophistication.The iconic Daisy 
-                    bottle, adorned with a playful scattering of daisies, reflects the 
-                    carefree spirit and timeless beauty encapsulated within this enchanting
-                    fragrance.</small>
-                    <br>
-                    <a href="" class="btn">Buy Now &#8594;</a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpDza9rd9_4?si=c02JDyizIQIgosJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+        </div>
 
+        <!---footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Andoriod and ios mobile phone.</p>
+                        <img class="app-store" src="Untitled design.png">
+                        <img class="app-store" src="Untitled design (1).png">
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="PERFUME_NX-removebg-preview.png">
+                        <p>Our purpose is to provide best fragrance perfume. Lorem ipsum
+                            dolor sit, amet consectetur adipisicing elit. Voluptas incidunt.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
                 </div>
+                <hr>
+                <p class="copy-right">Copy right 2024-Perfume Nx</p>
             </div>
         </div>
-    </div>
-    <!--testimmonial-->
-    <div class="testimmonial">
-        <div class="small contain">
-            <div class="row">
-            <div class="col3">
-            <i class="fa fa-quote-left"></i>    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus molestias neque architecto, consectetur nam ex velit 
-                ipsam vel explicabo eveniet aliquam nostrum pariatur sunt ad.
-                Ex voluptate aspernatur nostrum necessitatibus.</p>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-                 </div>
-                 <img src="maria-lupan-6XfCTg2Rxpc-unsplash.jpg" >
-                 <h3>Maria Lupan</h3>
-                 </div>
-           <div class="col3">
-           <i class="fa fa-quote-left"></i>    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus molestias neque architecto, consectetur nam ex velit 
-                ipsam vel explicabo eveniet aliquam nostrum pariatur sunt ad.
-                Ex voluptate aspernatur nostrum necessitatibus.</p>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-                </div>
-                <img src="albert-dera-ILip77SbmOE-unsplash.jpg" >
-                <h3>Albert Dera</h3>
-                 </div>
-            <div class="col3">
-            <i class="fa fa-quote-left"></i>    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus molestias neque architecto, consectetur nam ex velit 
-                ipsam vel explicabo eveniet aliquam nostrum pariatur sunt ad.
-                Ex voluptate aspernatur nostrum necessitatibus.</p>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-                </div>
-                <img src="zoe-fernandez--zqoE7jnQgw-unsplash.jpg" >
-                <h3>Zoe Fernandez</h3>
-            </div> 
-            </div>
-        </div>
-    </div>
-    <!---footer-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p>Download App for Andoriod and ios mobile phone.</p>
-                    <img class="app-store" src="Untitled design.png">
-                    <img  class="app-store"src="Untitled design (1).png" >
-                </div>
-                <div class="footer-col-2">
-                    <img src="PERFUME_NX-removebg-preview.png">
-                    <p>Our purpose is to provide best fragrance perfume. Lorem ipsum 
-                    dolor sit, amet consectetur adipisicing elit. Voluptas incidunt.  
-                    </p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copy-right">Copy right 2024-Perfume Nx</p>
-        </div>
-    </div>
 </body>
-</html>           
+
+</html>
